@@ -4,7 +4,7 @@ Integrantes
 - D'Ascanio, Sofía
 - García, Agustina Montserrat 
 
-###El trabajo práctico nº 1 es el diseño e implementación de una aplicación Web interactiva. Este
+El trabajo práctico nº 1 es el diseño e implementación de una aplicación Web interactiva. Este
 TP 1 es de entrega obligatoria y debe hacerse en grupos de dos personas.
 
 CuOOra es una red social de preguntas y respuestas. Los usuarios pueden crear ambas cosas (es
