@@ -1,0 +1,3 @@
+operations
+agregarTopicoDeInteres: unTopico
+topicosDeInteres add: unTopico

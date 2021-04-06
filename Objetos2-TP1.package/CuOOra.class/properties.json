@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Objetos2-TP1-Model",
+	"classinstvars" : [
+		"soleInstance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"topicos",
+		"usuarios"
+	],
+	"name" : "CuOOra",
+	"type" : "normal"
+}

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Publicacion",
+	"category" : "Objetos2-TP1",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"titulo",
+		"descripcion",
+		"usuario",
+		"respuestas",
+		"topicos"
+	],
+	"name" : "Pregunta",
+	"type" : "normal"
+}

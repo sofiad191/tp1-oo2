@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Objetos2-TP1",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nombre",
+		"contraseña",
+		"fechaHoraCreacion",
+		"usuariosSeguidos",
+		"topicosDeInteres",
+		"votos",
+		"preguntas",
+		"respuestas"
+	],
+	"name" : "Usuario",
+	"type" : "normal"
+}

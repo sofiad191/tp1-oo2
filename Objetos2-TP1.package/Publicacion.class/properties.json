@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Objetos2-TP1",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"texto",
+		"fechaHoraCreacion",
+		"cantidadLikes",
+		"cantidadDislikes",
+		"votos"
+	],
+	"name" : "Publicacion",
+	"type" : "normal"
+}

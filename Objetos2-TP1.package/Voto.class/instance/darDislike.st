@@ -1,0 +1,3 @@
+operations
+darDislike
+	estado := false
