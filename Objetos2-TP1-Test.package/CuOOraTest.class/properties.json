@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Objetos2-TP1-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sistema",
+		"us1",
+		"us2",
+		"top1",
+		"top2"
+	],
+	"name" : "CuOOraTest",
+	"type" : "normal"
+}

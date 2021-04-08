@@ -1,4 +1,4 @@
 operations
-borrarPregunta: unaPregunta
+eliminarPregunta: unaPregunta
 preguntas remove: unaPregunta
 	

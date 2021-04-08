@@ -1,5 +1,3 @@
 initialization
 initialize
-" ???? ojo con esto chequear"
-	publicacion := nil.
-	estado := nil
+	fechaHoraCreacion := DateAndTime now.

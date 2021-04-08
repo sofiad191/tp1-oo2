@@ -1,6 +1,7 @@
 operations
 eliminarPregunta
-	"mando a topicos borrarPregunta (todos de la coleccion), borro los topicos, mando a las respuestas para que los usuarios borrenRespuestas, borro las respuestas, borro la pregunta de la coleccion del usuario,
-borro la instancia? chequear esto"
+	"Es suficiente esto? "
 
-	
+	topicos do: [ :unTopico | unTopico eliminarPregunta: self ].
+	usuario do: [ :unUsuario | unUsuario eliminarPregunta: self ].
+	respuestas do: [ :unaRespuesta | unaRespuesta eliminarRespuesta ].

@@ -1,3 +1,3 @@
 accessing
-usuarioSeguidos
+usuariosSeguidos
 ^usuariosSeguidos

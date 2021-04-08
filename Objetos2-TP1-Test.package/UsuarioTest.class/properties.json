@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Objetos2-TP1-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"us1",
+		"us2",
+		"us3",
+		"top1",
+		"top2",
+		"top3",
+		"preg1",
+		"preg2",
+		"preg3",
+		"res1",
+		"res2",
+		"res3"
+	],
+	"name" : "UsuarioTest",
+	"type" : "normal"
+}

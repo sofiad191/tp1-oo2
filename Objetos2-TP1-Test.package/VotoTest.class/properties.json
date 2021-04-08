@@ -1,14 +1,16 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Objetos2-TP1",
+	"super" : "TestCase",
+	"category" : "Objetos2-TP1-Test",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"fechaHoraCreacion",
-		"votos"
+		"publi1",
+		"publi2",
+		"us1",
+		"us2"
 	],
-	"name" : "Publicacion",
+	"name" : "VotoTest",
 	"type" : "normal"
 }

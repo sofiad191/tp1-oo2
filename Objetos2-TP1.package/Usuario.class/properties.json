@@ -13,7 +13,8 @@
 		"topicosDeInteres",
 		"votos",
 		"preguntas",
-		"respuestas"
+		"respuestas",
+		"email"
 	],
 	"name" : "Usuario",
 	"type" : "normal"
