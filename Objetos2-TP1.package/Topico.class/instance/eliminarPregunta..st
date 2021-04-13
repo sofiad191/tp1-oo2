@@ -1,4 +1,3 @@
 operations
 eliminarPregunta: unaPregunta
-preguntas remove: unaPregunta
-	
+	preguntas remove: unaPregunta

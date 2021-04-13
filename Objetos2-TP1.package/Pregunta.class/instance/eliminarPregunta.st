@@ -1,7 +1,8 @@
 operations
 eliminarPregunta
-	"Es suficiente esto? "
+	"Es suficiente esto? Da error en los tests "
 
-	topicos do: [ :unTopico | unTopico eliminarPregunta: self ].
-	usuario do: [ :unUsuario | unUsuario eliminarPregunta: self ].
+	usuario eliminarPregunta: self.
 	respuestas do: [ :unaRespuesta | unaRespuesta eliminarRespuesta ].
+	respuestas removeAll: respuestas.
+	topicos do: [ :unTopico | [unTopico eliminarPregunta: self ]]
