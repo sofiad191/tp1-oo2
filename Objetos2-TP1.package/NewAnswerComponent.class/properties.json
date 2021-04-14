@@ -1,15 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Publicacion",
-	"category" : "Objetos2-TP1-Model",
+	"super" : "WAComponent",
+	"category" : "Objetos2-TP1-Seaside",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"texto",
-		"usuario",
-		"pregunta"
+		"textoRespuesta"
 	],
-	"name" : "Respuesta",
+	"name" : "NewAnswerComponent",
 	"type" : "normal"
 }

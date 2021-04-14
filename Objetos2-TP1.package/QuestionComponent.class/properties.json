@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Objetos2-TP1-Seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "QuestionComponent",
+	"type" : "normal"
+}

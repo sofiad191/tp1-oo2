@@ -1,0 +1,3 @@
+accessing
+descripcionPregunta: unaDescripcion
+descripcionPregunta := unaDescripcion

@@ -1,15 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Publicacion",
-	"category" : "Objetos2-TP1-Model",
+	"super" : "AccessGrantingComponent",
+	"category" : "Objetos2-TP1-Seaside",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"texto",
-		"usuario",
-		"pregunta"
+		"nombre"
 	],
-	"name" : "Respuesta",
+	"name" : "RegisterComponent",
 	"type" : "normal"
 }
