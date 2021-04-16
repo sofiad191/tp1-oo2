@@ -12,12 +12,12 @@ setUp
 		
 	preg1 := Pregunta
 		conTitulo: 'Desarrollo de Pagina web con Smalltalk(Seaside)'
-		descripcion: 'Problemas con la implementacion de los componentes'
+		conDescripcion: 'Problemas con la implementacion de los componentes'
 		yTopicos: top1.
 	us1 agregarPregunta: preg1.
 	
 	preg2 := Pregunta
 		conTitulo: 'Desarrollo de Pagina web con Javacript'
-		descripcion: 'Como empezar'
+		conDescripcion: 'Como empezar'
 		yTopicos: top2.
 	us2 agregarPregunta: preg2

@@ -40,17 +40,17 @@ setUp
 	colec3 := top1 nombre , ',' , top2 nombre"
 	preg1 := Pregunta
 		conTitulo: 'Desarrollo de Pagina web con Smalltalk(Seaside)'
-		descripcion: 'Problemas con la implementacion de los componentes'
+		conDescripcion: 'Problemas con la implementacion de los componentes'
 		yTopicos: colec1.
 	us1 agregarPregunta: preg1.
 	preg2 := Pregunta
 		conTitulo: 'Desarrollo de Pagina web con Javacript'
-		descripcion: 'Como empezar'
+		conDescripcion: 'Como empezar'
 		yTopicos: colec2.
 	us2 agregarPregunta: preg2.
 	preg3 := Pregunta
 		conTitulo: 'Similitudes entre JavaScript y Smalltalk'
-		descripcion: 'Que tienen en comun y que beneficios trae?'
+		conDescripcion: 'Que tienen en comun y que beneficios trae?'
 		yTopicos: colec3.
 	us3 agregarPregunta: preg3.
 	res1 := Respuesta conPregunta: preg1 YUnaDescripcion: 'Lee el libro'.
