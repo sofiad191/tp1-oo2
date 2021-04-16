@@ -1,7 +1,7 @@
-testing
+initialization
 puedeAgregar: unUsuario
 	unUsuario == self
-		ifTrue: [ ^ false ].
+	ifTrue: [ ^false ].
 	(usuariosSeguidos includes: unUsuario)
-		ifTrue: [ ^ false ].
-	^ true
+	ifTrue: [ ^false ].
+	^true

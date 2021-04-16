@@ -1,6 +1,5 @@
 utility
 crearUsuarioConNombre: unNombre email: unEmail yContraseña: unaContraseña
-	"deberia devolver ^nuevoUsuario ?"
 
 	| nuevoUsuario |
 	(self usuarioConEmail: unEmail yContraseña: unaContraseña)

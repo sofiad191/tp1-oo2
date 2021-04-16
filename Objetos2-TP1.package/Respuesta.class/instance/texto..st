@@ -1,3 +1,3 @@
 accessing
 texto: unTexto
-texto:= unTexto
+texto := unTexto

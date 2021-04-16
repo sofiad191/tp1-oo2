@@ -1,3 +1,3 @@
 accessing
-descripcion: unaDescripcion
-	descripcion := unaDescripcion
+descripcion: unaDescripcion 
+descripcion := unaDescripcion 

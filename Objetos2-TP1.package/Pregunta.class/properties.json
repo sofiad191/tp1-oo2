@@ -10,7 +10,8 @@
 		"descripcion",
 		"usuario",
 		"respuestas",
-		"topicos"
+		"topicos",
+		"texto"
 	],
 	"name" : "Pregunta",
 	"type" : "normal"

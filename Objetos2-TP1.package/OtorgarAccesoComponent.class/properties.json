@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Objetos2-TP1-Seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"email",
+		"contraseña"
+	],
+	"name" : "OtorgarAccesoComponent",
+	"type" : "normal"
+}

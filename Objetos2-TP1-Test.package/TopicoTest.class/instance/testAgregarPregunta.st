@@ -6,10 +6,10 @@ testAgregarPregunta
 	
 	preg3 := Pregunta new.
 	preg3 titulo: 'Problema con los tests'.
-	preg3 descripcion: 'No me anda el test de agregarPregunta'.
+	preg3 texto: 'No me anda el test de agregarPregunta'.
 	preg4 := Pregunta new.
 	preg4 titulo: 'Duda con implementacion de WALoginComponent'.
-	preg4 descripcion: 'Los usuarios no pueden hacer login'.
+	preg4 texto: 'Los usuarios no pueden hacer login'.
 	
 self deny: (topico preguntas includes: preg3).
 	

@@ -7,7 +7,10 @@ agregarPreguntaConTitulo: unTitulo conDescripcion: unaDescripcion yTopicos: unos
 	unaPregunta := Pregunta new.
 	unaPregunta titulo: unTitulo.
 	unaPregunta descripcion: unaDescripcion.
-	unaPregunta agregarTopico: unosTopicos.
+	unaPregunta
+		topicos:
+			(((unosTopicos asString substrings: ',')
+				collect: [ :nom | [ Topico conNombre: nom yDescripcion: '' ] ]) asOrderedCollection).
 	unaPregunta usuario: self.
 	self agregarPregunta: unaPregunta.
 	^ unaPregunta

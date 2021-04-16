@@ -1,21 +1,12 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas
-		form: [ aCanvas heading: 'Titulo'.
-			(aCanvas textArea on: #tituloPregunta of: self)
-				columns: 60;
-				rows: 2.
-			aCanvas break.
-			aCanvas heading: 'Descripcion'.
-			(aCanvas textArea on: #descripcionPregunta of: self)
-				columns: 50;
-				rows: 4.
-			aCanvas break.
-			aCanvas heading: 'Topicos'.
-			(aCanvas textArea on: #topicosPregunta of: self)
-				columns: 60;
-				rows: 1.
-			aCanvas break.
+   aCanvas heading level: 1; with: 'CuOOra '.
+   aCanvas horizontalRule .
+	aCanvas heading level: 2; with:'Nueva Pregunta'.
+	aCanvas form: [ self renderPreguntaInputElementsOn: aCanvas. 
 			aCanvas submitButton
 				callback: [ self preguntar ];
-				with: 'Preguntar' ]
+				with: 'Preguntar' .
+			aCanvas button 
+			callback: [self answer];
+			with: 'Cancelar']

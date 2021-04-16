@@ -1,3 +1,4 @@
 operations
 seguirUsuario: usuarioASeguir
-	usuariosSeguidos add: usuarioASeguir
+	(usuariosSeguidos includes: usuarioASeguir ) ifTrue: [^self] .
+	usuariosSeguidos add: usuarioASeguir 

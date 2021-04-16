@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Objetos2-TP1-Seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textoBusqueda"
+	],
+	"name" : "FindUsersComponent",
+	"type" : "normal"
+}

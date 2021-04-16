@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "OtorgarAccesoComponent",
+	"category" : "Objetos2-TP1-Seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nombre"
+	],
+	"name" : "CuOOraRegisterComponent",
+	"type" : "normal"
+}
