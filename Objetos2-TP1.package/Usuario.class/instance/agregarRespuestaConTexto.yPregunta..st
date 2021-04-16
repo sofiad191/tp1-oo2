@@ -7,5 +7,6 @@ agregarRespuestaConTexto: unTexto yPregunta: unaPregunta
 	unaRespuesta texto: unTexto.
 	unaRespuesta pregunta: unaPregunta.
 	unaRespuesta usuario: self.
+	unaPregunta agregarRespuesta: unaRespuesta.
 	self agregarRespuesta: unaRespuesta.
 	^ unaRespuesta
