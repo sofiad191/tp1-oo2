@@ -1,3 +1,3 @@
 callbacks
 createNewAnswer
-	self call: (NewAnswerComponent conPregunta: pregunta).
+	self call: (NewAnswerComponent conPregunta: pregunta)

@@ -3,9 +3,8 @@ renderAnswersOn: aCanvas
 	aCanvas heading
 		level: 2;
 		with: 'Respuestas'.
-	aCanvas anchor
-		callback: [ self createNewAnswer ];
-		with: [ aCanvas button: 'Agregar una nueva respuesta' ].
+	self renderAnswerQuestionButtonOn: aCanvas.
+	aCanvas break.
 	aCanvas
 		unorderedList: [ pregunta respuestas
 				do: [ :each | 
