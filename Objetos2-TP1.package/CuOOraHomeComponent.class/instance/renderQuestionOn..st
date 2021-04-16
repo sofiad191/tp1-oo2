@@ -1,16 +1,10 @@
 rendering
-renderQuestionsOn: aCanvas
-	aCanvas heading
-		level: 2;
-		with: 'Ultimas Preguntas'.
-	aCanvas anchor
-		callback: [ self createNewQuestion ];
-		with: [ aCanvas button: 'Agregar una nueva pregunta' ].
-	aCanvas
+renderQuestionOn: aCanvas
+	^ aCanvas
 		unorderedList: [ self session usuario obtenerPreguntasRelevantes
 				do: [ :each | 
 					aCanvas listItem: each titulo.
-					self renderQuestionButton: aCanvas.
+					self renderQuestionButton: aCanvas withQuestion: each. 
 					aCanvas listItem: each usuario nombre.
 					aCanvas listItem: [ each topicos do: [ :top | [ top nombre ] ] ].
 					aCanvas listItem: each cantidadLikes.

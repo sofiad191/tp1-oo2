@@ -4,7 +4,7 @@ renderContentOn: aCanvas
 		level: 1;
 		with: 'CuOOra '.
 	aCanvas horizontalRule.
-	self renderQuestionsOn: aCanvas.
+	self renderQuestionsListOn: aCanvas.
 	aCanvas horizontalRule.
 	self renderUsersOn: aCanvas.
 	aCanvas horizontalRule.
