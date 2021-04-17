@@ -2,7 +2,8 @@ tests
 testEliminarPregunta
 	| res |
 	self assert: preg1 respuestas size equals: 0.
-	res := us2 agregarRespuestaConTexto: 'Lee el libro' yPregunta: preg1.
+	res := Respuesta conPregunta: preg1  unaDescripcion: 'Lee el libro' yUnUsuario: us2 .
+	us2 agregarRespuesta: res.
 	preg1 agregarRespuesta: res.
 	self assert: preg1 respuestas size equals: 1.
 	self assert: preg1 topicos size equals: 1.

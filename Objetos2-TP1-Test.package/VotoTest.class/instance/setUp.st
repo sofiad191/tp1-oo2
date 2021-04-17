@@ -1,7 +1,7 @@
 running
 setUp
-	us1 := Usuario conNombre: 'Sofia' yContraseña: 'hola123'.
-	us2 := Usuario conNombre: 'Benito' yContraseña: 'chau1234'.
+	us1 := Usuario conNombre: 'Sofia' conEmail: 'sofia@gmail.com' yContraseña: 'hola123'.
+	us2 := Usuario conNombre: 'Benito' conEmail: 'benito@gmail.com' yContraseña: 'chau1234'.
 	publi1 := Pregunta new.
 	publi1 titulo: 'Trabajo Practico 1'.
 	publi1 texto: 'Para que me sirven los tests?'.

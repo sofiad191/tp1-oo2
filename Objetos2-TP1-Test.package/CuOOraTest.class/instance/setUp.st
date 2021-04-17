@@ -1,7 +1,7 @@
 running
 setUp
 	sistema := CuOOra new.
-	us1 := Usuario conNombre: 'Juan' yContraseña: 'hola123'.
+	us1 := Usuario conNombre: 'Juan' conEmail: 'juan@gmail.com' yContraseña: 'hola123'.
 	us2 := Usuario
 		conNombre: 'Pablo'
 		conEmail: 'pablo@gmail.com'
