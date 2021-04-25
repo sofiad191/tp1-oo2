@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"texto",
-		"usuario",
 		"pregunta"
 	],
 	"name" : "Respuesta",

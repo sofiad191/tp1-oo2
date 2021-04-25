@@ -2,8 +2,7 @@ rendering
 renderUsers: usuarios on: aCanvas
 	^ aCanvas
 		unorderedList: [ usuarios
-				do: [ :each | 
-					(self session usuario puedeAgregar: each)
+				do: [ :each | (self session usuario puedeAgregar: each)
 						ifTrue: [ aCanvas
 								listItem: [ aCanvas
 										text: each nombre;

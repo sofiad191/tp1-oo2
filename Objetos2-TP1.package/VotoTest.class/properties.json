@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Objetos2-TP1-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"publi1",
+		"publi2",
+		"us1",
+		"us2"
+	],
+	"name" : "VotoTest",
+	"type" : "normal"
+}

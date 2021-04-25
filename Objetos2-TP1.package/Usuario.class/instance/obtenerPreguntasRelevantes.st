@@ -1,6 +1,7 @@
 operations
 obtenerPreguntasRelevantes
 	| preguntasUsuarios preguntasTopicos preg1 preg2 |
+	
 	preguntasUsuarios := OrderedCollection new.
 	preguntasTopicos := OrderedCollection new.
 	preg1 := OrderedCollection new.

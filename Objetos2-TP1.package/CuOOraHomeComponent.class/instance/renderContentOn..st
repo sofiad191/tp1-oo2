@@ -5,7 +5,7 @@ renderContentOn: aCanvas
 		with: 'CuOOra '.
 	aCanvas horizontalRule.
 	self renderQuestionsListOn: aCanvas.
-	aCanvas horizontalRule.
+	
 	self renderUsersOn: aCanvas.
 	aCanvas horizontalRule.
 	self renderLogoutButtonOn: aCanvas

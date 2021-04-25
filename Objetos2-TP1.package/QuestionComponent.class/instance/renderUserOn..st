@@ -1,6 +1,7 @@
 rendering
 renderUserOn: aCanvas
-	aCanvas listItem: pregunta usuario nombre.
-	aCanvas anchor
-		callback: [ self seguirUsuario: (pregunta usuario nombre) ];
-		with: [ aCanvas button: 'Seguir usuario' ]
+	aCanvas span: 'Pregunta de ' , pregunta usuario nombre , '  '.
+	(self session usuario puedeAgregar: pregunta usuario)
+		ifTrue: [ aCanvas anchor
+				callback: [ self session usuario seguirUsuario: pregunta usuario ];
+				with: [ aCanvas button: 'Seguir usuario' ] ].

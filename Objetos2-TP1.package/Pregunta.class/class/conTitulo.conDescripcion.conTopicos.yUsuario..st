@@ -4,7 +4,8 @@ conTitulo: unTitulo conDescripcion: unaDescripcion conTopicos: unTopico yUsuario
 		titulo: unTitulo;
 		texto: unaDescripcion;
 		topicos:
-			((unTopico asString substrings: ',')
-				collect: [ :nombre | [ Topico conNombre: nombre yDescripcion: '' ] ]);
+			((unTopico substrings: ',') asOrderedCollection
+				collect:
+					[ :nom | CuOOra soleInstance agregarTopicoConNombre: nom yDescripcion: '' ]);
 		usuario: unUsuario;
-		yourself
+			yourself

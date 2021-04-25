@@ -1,20 +1,18 @@
 rendering
 renderQuestionOn: aCanvas
-	^ aCanvas
-		unorderedList: [ self session usuario obtenerPreguntasRelevantes
-				do: [ :each | 
-					aCanvas listItem: each titulo.
-					self renderQuestionButton: aCanvas withQuestion: each. 
-					aCanvas listItem: each usuario nombre.
-					aCanvas listItem: [ each topicos do: [ :top | [ top nombre ] ] ].
-					aCanvas listItem: each cantidadLikes.
-					aCanvas listItem: each cantidadDislikes.
-					aCanvas anchor
-						callback: [ self session usuario agregarVotoConEstado: true aPublicacion: each ];
-						with: [ aCanvas button: 'Like' ].
-					aCanvas anchor
-						callback:
-								[ self session usuario agregarVotoConEstado: false aPublicacion: each ];
-						with: [ aCanvas button: 'Dislike' ].
-					aCanvas break.
-					aCanvas break ] ]
+	aCanvas
+		div: [ self session usuario obtenerPreguntasRelevantes
+				 do: [ :each | 
+					aCanvas
+						paragraph: [ aCanvas anchor
+								callback: [ self goToQuestion: each ];
+								with: [ aCanvas heading level3 with: each titulo ].
+							aCanvas span: 'Topicos: '.
+							aCanvas span: [ each topicos do: [ :top | top nombre ] ].
+							aCanvas break.
+							self renderQuestionInfo: each On: aCanvas.
+							aCanvas break.
+							self renderVotesOn: aCanvas fromQuestion: each.
+							aCanvas break.
+							self renderQuestionButton: aCanvas withQuestion: each.
+							aCanvas horizontalRule ] ] ]

@@ -5,7 +5,10 @@ renderUsersOn: aCanvas
 		with: 'Usuarios seguidos'.
 	aCanvas
 		unorderedList: [ self session usuario usuariosSeguidos
-				do: [ :each | aCanvas listItem: each nombre ] ].
+				do: [ :each | 
+					aCanvas anchor
+						callback: [ self goToProfile: each ];
+						with: [ aCanvas span: each nombre ]. aCanvas break.] ].
 	aCanvas anchor
 		callback: [ self findUsers ];
 		with: [ aCanvas button: 'Encuentra usuarios' ]

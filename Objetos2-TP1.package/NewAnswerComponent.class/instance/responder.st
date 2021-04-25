@@ -1,10 +1,10 @@
 callbacks
 responder
+	| respuesta |
 	textoRespuesta ifEmpty: [ ^ self ].
-	self session usuario
-		agregarRespuestaConTexto: textoRespuesta
-		yPregunta: pregunta.
-	self answer
-	"respuesta texto: textoRespuesta.
+	respuesta := Respuesta
+		conPregunta: pregunta
+		unaDescripcion: textoRespuesta
+		yUnUsuario: self session usuario.
 	self session usuario agregarRespuesta: respuesta.
-	pregunta agregarRespuesta: respuesta."
+	self answer

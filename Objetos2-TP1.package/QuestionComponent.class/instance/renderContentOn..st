@@ -4,13 +4,13 @@ renderContentOn: aCanvas
 
 	aCanvas heading
 		level: 1;
-		with: pregunta titulo.
-	aCanvas break.
-	self renderUserOn: aCanvas.
-	aCanvas break.
+		with: 'CuOOra '.
+	aCanvas horizontalRule.
+	self renderEncabezadoDePreguntaOn: aCanvas.
 	"	self renderTopicOn: aCanvas."
 	aCanvas break.
 	self renderVotesOn: aCanvas fromQuestion: pregunta.
+	self renderQuestionBodyOn: aCanvas fromQuestion: pregunta.
 	aCanvas break.
 	self renderAnswersOn: aCanvas.
 	aCanvas anchor

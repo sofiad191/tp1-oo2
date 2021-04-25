@@ -1,10 +1,9 @@
 callbacks
 preguntar
+ | pregunta |
 	tituloPregunta ifEmpty: [ ^ self ].
 	descripcionPregunta ifEmpty: [ ^ self ].
 	topicosPregunta ifEmpty: [ ^ self ].
-	self session usuario
-		agregarPreguntaConTitulo: tituloPregunta
-		conDescripcion: descripcionPregunta
-		yTopicos: topicosPregunta.
+	pregunta := Pregunta conTitulo: tituloPregunta conDescripcion: descripcionPregunta conTopicos: topicosPregunta  yUsuario: self session usuario.
+	self session usuario agregarPregunta: pregunta .
 	self answer
