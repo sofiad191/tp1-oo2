@@ -1,3 +1,3 @@
 as yet unclassified
 cantidadLikes
-	^votos count: [ :unVoto | unVoto estado = true ]
+	^ votos count: [ :unVoto | unVoto estado ]

@@ -1,6 +1,8 @@
 operations
 agregarVoto: unVoto conUsuario: unUsuario
-	votos
-		detect: [ :voto | voto creador = unUsuario ]
-		ifFound: [ :voto | self eliminarVoto: voto ].
-	self agregarVoto: unVoto 
+	| voto |
+	voto := Voto new.
+	voto := votos
+		detect: [ :v | v creador = unUsuario ]
+		ifFound: [ self eliminarVoto: voto ].
+	self agregarVoto: unVoto
