@@ -1,8 +1,14 @@
 running
 setUp
 	votos := OrderedCollection new.
-	us1 := Usuario conNombre: 'Juan' conEmail: 'juan@gmail.com' yContraseña: 'contraseña'.
-	us2 := Usuario conNombre: 'Pepe' conEmail: 'pepe@gmail.com' yContraseña: 'pepe123'.
+	us1 := Usuario
+		conNombre: 'Juan'
+		conEmail: 'juan@gmail.com'
+		yContraseña: 'contraseña'.
+	us2 := Usuario
+		conNombre: 'Pepe'
+		conEmail: 'pepe@gmail.com'
+		yContraseña: 'pepe123'.
 	top1 := Topico
 		conNombre: 'Smalltalk'
 		yDescripcion: 'Lenguaje de Programacion'.
@@ -19,5 +25,5 @@ setUp
 		conDescripcion: 'Como empezar'
 		conTopicos: top2 nombre
 		yUsuario: us1.
-	res1 := us2 agregarRespuestaConTexto: '..' yPregunta: preg1.
-	res2 := us1 agregarRespuestaConTexto: '..' yPregunta: preg2
+	res1 := Respuesta conPregunta: preg1 unaDescripcion: '..' yUnUsuario: us2.
+	res2 := Respuesta conPregunta: preg2 unaDescripcion: '..' yUnUsuario: us1.
