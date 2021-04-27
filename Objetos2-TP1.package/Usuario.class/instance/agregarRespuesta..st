@@ -1,3 +1,3 @@
 operations
 agregarRespuesta: unaRespuesta
-	self respuestas add: unaRespuesta
+	respuestas add: unaRespuesta

@@ -14,12 +14,12 @@ renderAnswersOn: aCanvas
 					self renderVotesOn: aCanvas fromQuestion: each.
 					aCanvas break.
 					aCanvas anchor
-						callback: [ self session usuario agregarVotoConEstado: true aPublicacion: each ];
+						callback: [ each agregarLikeConUsuario: self session usuario];
 						with: [ aCanvas button: 'Like' ].
 					aCanvas anchor
 						callback:
-								[ self session usuario agregarVotoConEstado: false aPublicacion: each ];
+								[ each agregarDislikeConUsuario: self session usuario ];
 						with: [ aCanvas button: 'Dislike' ].
 					aCanvas break.
 					aCanvas horizontalRule.
-					 aCanvas break ] ]
+					aCanvas break ] ]
