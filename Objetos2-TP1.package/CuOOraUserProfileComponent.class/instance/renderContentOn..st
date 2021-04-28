@@ -6,11 +6,10 @@ renderContentOn: aCanvas
 	aCanvas horizontalRule.
 	aCanvas heading: 'Perfil de ' , self usuario nombre.
 	aCanvas
-		span:
-			'Puntaje del usuario: ' , self usuario calcularPuntajeUsuario asString.
+		span: 'Puntaje del usuario: ' , self usuario calcularPuntajeUsuario asString.
 	aCanvas break.
-	(self session usuario puedeAgregar: self usuario)
-		ifTrue: [ aCanvas anchor
+	(self session usuario siSoyYoOLoSigo: self usuario)
+		ifFalse: [ aCanvas anchor
 				callback: [ self session usuario seguirUsuario: self usuario ];
 				with: [ aCanvas span: [ aCanvas button: 'Seguir usuario' ] ] ].
 	aCanvas anchor

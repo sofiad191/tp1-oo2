@@ -1,3 +1,6 @@
 utility
 agregarUsuario: unUsuario
-usuarios add: unUsuario 
+	^ usuarios
+		detect: [ :usuario | usuario nombre = unUsuario nombre ]
+		ifFound: [ nil ]
+		ifNone: [ usuarios add: unUsuario ]

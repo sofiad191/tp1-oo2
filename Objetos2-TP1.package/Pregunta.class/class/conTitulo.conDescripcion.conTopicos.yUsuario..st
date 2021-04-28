@@ -3,9 +3,6 @@ conTitulo: unTitulo conDescripcion: unaDescripcion conTopicos: unTopico yUsuario
 	^ self new
 		titulo: unTitulo;
 		texto: unaDescripcion;
-		topicos:
-			((unTopico substrings: ',') asOrderedCollection
-				collect:
-					[ :nom | CuOOra soleInstance agregarTopicoConNombre: nom yDescripcion: '' ]);
+		topicos: unTopico ;
 		usuario: unUsuario;
 			yourself

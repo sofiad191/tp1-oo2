@@ -1,4 +1,4 @@
 operations
 seguirUsuario: usuarioASeguir
-	usuarioASeguir == self
-	ifFalse: [ usuariosSeguidos add: usuarioASeguir ]
+	(self siSoyYoOLoSigo: usuarioASeguir)
+		ifFalse: [ usuariosSeguidos add: usuarioASeguir ]

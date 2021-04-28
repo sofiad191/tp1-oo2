@@ -7,11 +7,10 @@ renderContentOn: aCanvas
 		with: 'CuOOra '.
 	aCanvas horizontalRule.
 	self renderEncabezadoDePreguntaOn: aCanvas.
-	aCanvas break.
+	self renderQuestionBodyOn: aCanvas fromQuestion: pregunta.
 	self renderTopicOn: aCanvas.
 	aCanvas break.
 	self renderVotesOn: aCanvas fromQuestion: pregunta.
-	self renderQuestionBodyOn: aCanvas fromQuestion: pregunta.
 	aCanvas break.
 	self renderAnswersOn: aCanvas.
 	aCanvas anchor

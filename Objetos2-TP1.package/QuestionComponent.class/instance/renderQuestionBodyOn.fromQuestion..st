@@ -1,3 +1,6 @@
 rendering
 renderQuestionBodyOn: aCanvas fromQuestion: unaPregunta
-	aCanvas paragraph: unaPregunta texto 
+	aCanvas heading
+		level: 4;
+		with: 'Descripcion'.
+	aCanvas paragraph: unaPregunta texto
