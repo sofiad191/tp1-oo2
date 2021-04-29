@@ -14,5 +14,5 @@ renderQuestionOn: aCanvas
 							aCanvas break.
 							self renderVotesOn: aCanvas fromQuestion: each.
 							aCanvas break.
-							self renderQuestionButton: aCanvas withQuestion: each.
+							self renderVotesButton: aCanvas withQuestion: each.
 							aCanvas horizontalRule ] ] ]
