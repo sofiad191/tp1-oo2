@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "s 4/16/2021 21:46",
-	"super" : "WAComponent",
+	"super" : "MainComponent",
 	"category" : "Objetos2-TP1-Seaside",
 	"classinstvars" : [ ],
 	"pools" : [ ],
