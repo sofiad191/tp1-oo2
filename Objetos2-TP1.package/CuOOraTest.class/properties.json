@@ -10,7 +10,9 @@
 		"us1",
 		"us2",
 		"top1",
-		"top2"
+		"top2",
+		"preg2",
+		"preg1"
 	],
 	"name" : "CuOOraTest",
 	"type" : "normal"

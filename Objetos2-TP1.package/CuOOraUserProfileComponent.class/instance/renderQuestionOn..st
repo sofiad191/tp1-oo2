@@ -1,3 +1,3 @@
 rendering
 renderQuestionOn: aCanvas
-	CuOOraHomeComponent renderQuestionsOn: aCanvas.
+	CuOOraHomeComponent renderQuestionsOn: aCanvas

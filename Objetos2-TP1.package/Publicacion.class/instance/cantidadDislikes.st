@@ -1,3 +1,3 @@
 operations
 cantidadDislikes
-	^ votos count: [ :unVoto | unVoto not estado ]
+	^ votos count: [ :unVoto | (unVoto estado) not  ]
