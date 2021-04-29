@@ -11,7 +11,8 @@
 		"preg1",
 		"preg2",
 		"top1",
-		"top2"
+		"top2",
+		"sistema"
 	],
 	"name" : "PreguntaTest",
 	"type" : "normal"

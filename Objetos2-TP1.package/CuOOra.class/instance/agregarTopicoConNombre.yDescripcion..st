@@ -4,5 +4,4 @@ agregarTopicoConNombre: unNombre yDescripcion: unaDescripcion
 	nuevoTopico := Topico
 		conNombre: unNombre
 		yDescripcion: unaDescripcion.
-	self agregarTopico: nuevoTopico.
-	^ nuevoTopico
+	^ self agregarTopico: nuevoTopico.

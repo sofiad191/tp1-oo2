@@ -8,7 +8,8 @@
 	"instvars" : [
 		"usuario",
 		"fechaHoraCreacion",
-		"votos"
+		"votos",
+		"texto"
 	],
 	"name" : "Publicacion",
 	"type" : "normal"

@@ -19,4 +19,9 @@ setUp
 		conDescripcion: 'Como empezar'
 		conTopicos: 'JavaScript'
 		yUsuario: us2.
-	us2 agregarPregunta: preg2
+	us2 agregarPregunta: preg2.
+	"--"
+	sistema := CuOOra soleInstance.
+	sistema agregarUsuario: us1.
+	sistema agregarUsuario: us2.
+	

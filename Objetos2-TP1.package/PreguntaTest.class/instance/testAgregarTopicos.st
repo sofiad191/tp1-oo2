@@ -1,5 +1,5 @@
 tests
-testAgregarTopico
+testAgregarTopicos
 	| preg4 top |
 	preg4 := Pregunta
 		conTitulo: 'Hola'
@@ -11,5 +11,5 @@ testAgregarTopico
 	self assert: preg4 topicos size equals: 2.
 	top := preg4 topicos detect: [ :t | t nombre = 'Java' ].
 	self assert: (preg4 topicos includes: top).
-	top := preg4 topicos detect: [ :t | t nombre = 'oo' ].
-	self assert: (preg4 topicos includes: top).
+	top := sistema topicos detect: [ :t | t nombre = 'oo' ].
+	self assert: (sistema topicos includes: top)

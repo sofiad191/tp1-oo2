@@ -1,3 +1,3 @@
-as yet unclassified
+operations
 siSoyYoOLoSigo: unUsuario
 	^ unUsuario == self or: (usuariosSeguidos includes: unUsuario)
