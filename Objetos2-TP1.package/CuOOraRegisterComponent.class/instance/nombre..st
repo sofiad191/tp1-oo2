@@ -1,3 +1,3 @@
 accessing
-nombre: anObject
-	nombre := anObject
+nombre: unNombre
+nombre:= unNombre

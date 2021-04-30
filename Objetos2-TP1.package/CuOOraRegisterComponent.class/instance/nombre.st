@@ -1,3 +1,2 @@
 accessing
-nombre
-	^ nombre
+nombre^nombre

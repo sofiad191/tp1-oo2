@@ -1,6 +1,8 @@
 private protocol
 login
-	(self model usuarioConEmail: email yContraseña: contraseña  )
-		ifNotNil: [ :it | self proceedWith: it ].
+	| us |
+	us := Usuario new.
+	us := (self model usuarioConEmail: email yContraseña: contraseña)
+		ifNotNil: [ self proceedWith: us ].
 	email := nil.
 	contraseña := nil
