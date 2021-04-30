@@ -10,9 +10,18 @@ setUp
 	us3 sigue a: us1 y: top2, top3
 	"
 
-	us1 := Usuario conNombre: 'Juan' conEmail: 'juan@gmail.com' yContraseña: 'contraseña'.
-	us2 := Usuario conNombre: 'Pepe' conEmail: 'pepe@gmail.com' yContraseña: 'pepe123'.
-	us3 := Usuario conNombre: 'Sofia' conEmail: 'sofia@gmail.com' yContraseña: 'sofia123'.
+	us1 := Usuario
+		conNombre: 'Juan'
+		conEmail: 'juan@gmail.com'
+		yContraseña: 'contraseña'.
+	us2 := Usuario
+		conNombre: 'Pepe'
+		conEmail: 'pepe@gmail.com'
+		yContraseña: 'pepe123'.
+	us3 := Usuario
+		conNombre: 'Sofia'
+		conEmail: 'sofia@gmail.com'
+		yContraseña: 'sofia123'.
 	us1 seguirUsuario: us2.
 	us2 seguirUsuario: us3.
 	us3 seguirUsuario: us1.
@@ -29,29 +38,28 @@ setUp
 	colec1 := OrderedCollection new.
 	colec2 := OrderedCollection new.
 	colec3 := OrderedCollection new.
-	colec1 := top1 nombre , ',' , top3 nombre.
-	colec2 := top2 nombre , ',' , top3 nombre.
-	colec3 := top1 nombre , ',' , top2 nombre.
-
-	"colec1 := top1 nombre , ',' , top3 nombre.
-	colec2 := top2 nombre , ',' , top3 nombre.
-	colec3 := top1 nombre , ',' , top2 nombre"
+	colec1 add: top1.
+	colec1 add: top3.
+	colec2 add: top2.
+	colec2 add: top3.
+	colec3 add: top1.
+	colec3 add: top2.
 	preg1 := Pregunta
 		conTitulo: 'Desarrollo de Pagina web con Smalltalk(Seaside)'
 		conDescripcion: 'Problemas con la implementacion de los componentes'
-		conTopicos: colec1
+		conTopicos: ('Smalltalk,Paginas web')
 		yUsuario: us1.
 	us1 agregarPregunta: preg1.
 	preg2 := Pregunta
 		conTitulo: 'Desarrollo de Pagina web con Javacript'
 		conDescripcion: 'Como empezar'
-		conTopicos: colec2
+		conTopicos: ('Javascript, Paginas web')
 		yUsuario: us2.
 	us2 agregarPregunta: preg2.
 	preg3 := Pregunta
 		conTitulo: 'Similitudes entre JavaScript y Smalltalk'
 		conDescripcion: 'Que tienen en comun y que beneficios trae?'
-		conTopicos: colec3
+		conTopicos: ('Smalltalk,Javascript')
 		yUsuario: us3.
 	us3 agregarPregunta: preg3.
 	res1 := Respuesta

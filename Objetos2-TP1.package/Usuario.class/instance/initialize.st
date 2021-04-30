@@ -1,7 +1,7 @@
 initialization
 initialize
 	usuariosSeguidos := Set new.
-	topicosDeInteres := OrderedCollection new.
+	topicosDeInteres := Set new.
 	votos := OrderedCollection new.
 	preguntas := OrderedCollection new.
 	respuestas := OrderedCollection new

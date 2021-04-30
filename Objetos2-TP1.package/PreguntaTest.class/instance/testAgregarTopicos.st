@@ -11,5 +11,3 @@ testAgregarTopicos
 	self assert: preg4 topicos size equals: 2.
 	top := preg4 topicos detect: [ :t | t nombre = 'Java' ].
 	self assert: (preg4 topicos includes: top).
-	top := sistema topicos detect: [ :t | t nombre = 'oo' ].
-	self assert: (sistema topicos includes: top)

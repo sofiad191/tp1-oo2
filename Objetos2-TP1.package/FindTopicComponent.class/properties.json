@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "MainComponent",
 	"category" : "Objetos2-TP1-Seaside",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"textoBusqueda"
 	],
-	"name" : "MainComponent",
+	"name" : "FindTopicComponent",
 	"type" : "normal"
 }

@@ -8,22 +8,13 @@ renderAnswersOn: aCanvas
 				do: [ :each | 
 					aCanvas
 						paragraph: [ aCanvas anchor
-								callback: [ self call: (QuestionComponent conPregunta: each) ];
+								callback: [ self goToQuestion: each ];
 								with: [ aCanvas heading level3 with: each pregunta titulo ].
 							aCanvas span: each texto.
 							aCanvas break.
 							aCanvas span: 'Realizada por ' , self usuario nombre.
 							aCanvas break.
-							aCanvas
-								span:
-									each cantidadLikes asString , ' likes  |  '
-										, each cantidadDislikes asString , ' dislikes'.
+							self renderVotesOn: aCanvas fromQuestion: each.
 							aCanvas break.
-							aCanvas anchor
-								callback: [ each pregunta agregarLikeConUsuario: self session usuario];
-								with: [ aCanvas button: 'Like' ].
-							aCanvas anchor
-								callback:
-										[ each pregunta agregarDislikeConUsuario: self session usuario ];
-								with: [ aCanvas button: 'Dislike' ].
+							self renderVotesButton: aCanvas withQuestion: each.
 							aCanvas horizontalRule ] ] ]

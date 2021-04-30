@@ -1,5 +1,5 @@
 tests
-testAgregarTopicos
+testAgregarTopico
 	| top3 top4 |
 	self assert: sistema topicos size equals: 2.
 	top3 := Topico

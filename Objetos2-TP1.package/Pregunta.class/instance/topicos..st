@@ -3,7 +3,6 @@ topicos: unosTopicos
 	| top |
 	top := OrderedCollection new.
 	top := ((unosTopicos substrings: ',')
-		collect: [ :nombre | Topico conNombre: nombre yDescripcion: '' ])
+		collect: [ :nombre | CuOOra soleInstance agregarTopicoConNombre: nombre yDescripcion: '' ])
 		asOrderedCollection.
-	self agregarTopicos: top.
-	topicos do: [ :t | [ CuOOra soleInstance agregarTopico: t.  t agregarPregunta: self ] ]
+	self agregarTopicos: top

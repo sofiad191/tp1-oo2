@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "MainComponent",
 	"category" : "Objetos2-TP1-Seaside",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"textoBusqueda"
+		"topicoAMostrar"
 	],
-	"name" : "MainComponent",
+	"name" : "TopicComponent",
 	"type" : "normal"
 }

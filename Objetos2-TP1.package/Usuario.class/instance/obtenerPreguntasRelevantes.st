@@ -1,10 +1,6 @@
 operations
 obtenerPreguntasRelevantes
-	| preguntasUsuarios preguntasTopicos |
-	preguntasUsuarios := OrderedCollection new.
-	preguntasTopicos := OrderedCollection new.
-	preguntasUsuarios := usuariosSeguidos
-		flatCollect: [ :unUsuario | unUsuario preguntas ].
-	preguntasTopicos := topicosDeInteres
-		flatCollect: [ :unTopico | unTopico preguntas ].
-	^ preguntasUsuarios union: preguntasTopicos
+|preguntasRelevantes |
+preguntasRelevantes := self topicosDeInteres flatCollect: [ :tops | tops preguntas].
+preguntasRelevantes addAll: (self usuariosSeguidos flatCollect: [ :us | us preguntas ]) asSet.
+^preguntasRelevantes
