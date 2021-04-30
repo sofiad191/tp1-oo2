@@ -1,9 +1,6 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas heading
-		level: 1;
-		with: 'CuOOra '.
-	aCanvas horizontalRule.
+	super renderContentOn: aCanvas.
 	aCanvas heading: 'Perfil de ' , self usuario nombre.
 	aCanvas
 		span: 'Puntaje del usuario: ' , self usuario calcularPuntajeUsuario asString.
@@ -15,5 +12,5 @@ renderContentOn: aCanvas
 	aCanvas anchor
 		callback: [ self answer ];
 		with: [ aCanvas span: [ aCanvas button: 'Volver' ] ].
-	self renderQuestionOn: aCanvas.
+	self renderQuestionOnProfile: aCanvas.
 	self renderAnswersOn: aCanvas

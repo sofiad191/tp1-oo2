@@ -5,4 +5,5 @@ crearUsuarioConNombre: unNombre email: unEmail yContraseña: unaContraseña
 		conNombre: unNombre
 		conEmail: unEmail
 		yContraseña: unaContraseña.
-	^ self agregarUsuario: nuevoUsuario.
+	self agregarUsuario: nuevoUsuario.
+	^nuevoUsuario

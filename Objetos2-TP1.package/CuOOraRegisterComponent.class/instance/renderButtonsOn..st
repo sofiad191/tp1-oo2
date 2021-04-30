@@ -1,4 +1,4 @@
 rendering
-renderButtonsOn: aCanvas 
+renderButtonsOn: aCanvas
 	self renderSignUpButtonOn: aCanvas.
-	self renderVolverButtonOn: aCanvas 
+	

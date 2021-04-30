@@ -4,7 +4,7 @@ renderAnswerUser: unUsuario On: aCanvas
 	aCanvas anchor
 		callback: [ self goToProfile: unUsuario ];
 		with: [ aCanvas span: unUsuario nombre ].
-	(self session usuario puedeAgregar: unUsuario)
-		ifTrue: [ aCanvas anchor
+	(self session usuario siSoyYoOLoSigo: unUsuario)
+		ifFalse: [ aCanvas anchor
 				callback: [ self session usuario seguirUsuario: unUsuario  ];
 				with: [ aCanvas button: 'Seguir usuario' ] ]

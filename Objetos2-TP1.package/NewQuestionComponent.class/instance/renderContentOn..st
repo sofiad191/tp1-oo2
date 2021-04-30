@@ -7,6 +7,4 @@ renderContentOn: aCanvas
 			aCanvas submitButton
 				callback: [ self preguntar ];
 				with: 'Preguntar' .
-			aCanvas button 
-			callback: [self answer];
-			with: 'Cancelar']
+		 ]

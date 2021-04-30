@@ -1,5 +1,6 @@
 rendering
 renderContentOn: aCanvas
+	super renderContentOn: aCanvas.
 	self renderSearchFormOn: aCanvas.
 	self renderSearchResultsOn: aCanvas.
 	aCanvas horizontalRule.

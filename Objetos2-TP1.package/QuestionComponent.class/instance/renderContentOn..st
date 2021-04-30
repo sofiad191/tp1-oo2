@@ -1,11 +1,7 @@
 rendering
 renderContentOn: aCanvas
 	"Toda la info de pregunta + sus respuestas"
-
-	aCanvas heading
-		level: 1;
-		with: 'CuOOra '.
-	aCanvas horizontalRule.
+	super renderContentOn: aCanvas.
 	self renderEncabezadoDePreguntaOn: aCanvas.
 	self renderQuestionBodyOn: aCanvas fromQuestion: pregunta.
 	self renderTopicOn: aCanvas.

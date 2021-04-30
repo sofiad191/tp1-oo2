@@ -1,11 +1,14 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas heading
-		level: 1;
-		with: 'CuOOra '.
-	aCanvas horizontalRule.
-	self renderQuestionsListOn: aCanvas.
+super renderContentOn: aCanvas.
+aCanvas heading
+		level: 2;
+		with: 'Ultimas preguntas '.
+aCanvas anchor
+		callback: [ self call: NewQuestionComponent new ];
+		with: [aCanvas button: 'Agregar nueva pregunta' ].
+self renderQuestionOnHome: aCanvas.
 	
-	self renderUsersOn: aCanvas.
-	aCanvas horizontalRule.
-	self renderLogoutButtonOn: aCanvas
+aCanvas horizontalRule.
+
+self renderUsersOn: aCanvas.

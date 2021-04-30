@@ -20,10 +20,10 @@ renderAnswersOn: aCanvas
 										, each cantidadDislikes asString , ' dislikes'.
 							aCanvas break.
 							aCanvas anchor
-								callback: [ self session usuario agregarVotoConEstado: true aPublicacion: each ];
+								callback: [ each pregunta agregarLikeConUsuario: self session usuario];
 								with: [ aCanvas button: 'Like' ].
 							aCanvas anchor
 								callback:
-										[ self session usuario agregarVotoConEstado: false aPublicacion: each ];
+										[ each pregunta agregarDislikeConUsuario: self session usuario ];
 								with: [ aCanvas button: 'Dislike' ].
 							aCanvas horizontalRule ] ] ]
