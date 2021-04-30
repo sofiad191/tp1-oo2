@@ -7,8 +7,11 @@ renderContentOn: aCanvas
 	self renderTopicOn: aCanvas.
 	aCanvas break.
 	self renderVotesOn: aCanvas fromQuestion: pregunta.
+	aCanvas space.
+	super renderVotesButton: aCanvas withQuestion: pregunta.
 	aCanvas break.
 	self renderAnswersOn: aCanvas.
 	aCanvas anchor
 		callback: [ self answer ];
 		with: [ aCanvas button: 'Volver' ]
+	

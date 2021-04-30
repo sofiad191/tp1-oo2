@@ -1,5 +1,7 @@
 rendering
 renderUserOn: aCanvas
+
+	
 	aCanvas span: 'Pregunta de ' , pregunta usuario nombre asString , '  '.
 	(self session usuario siSoyYoOLoSigo: pregunta usuario)
 		ifFalse: [ aCanvas anchor
