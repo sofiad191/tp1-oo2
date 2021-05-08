@@ -1,7 +1,6 @@
 rendering
 registrarEIniciarSesion
 	| unUsuario |
-	unUsuario := Usuario new.
 	unUsuario := (self model
 		crearUsuarioConNombre: nombre
 		email: email
