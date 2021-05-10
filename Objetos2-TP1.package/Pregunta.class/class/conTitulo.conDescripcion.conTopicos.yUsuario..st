@@ -3,6 +3,6 @@ conTitulo: unTitulo conDescripcion: unaDescripcion conTopicos: unTopico yUsuario
 	^ self new
 		titulo: unTitulo;
 		texto: unaDescripcion;
-		topicos: unTopico ;
+		topicos: unTopico;
 		usuario: unUsuario;
-			yourself
+		yourself
