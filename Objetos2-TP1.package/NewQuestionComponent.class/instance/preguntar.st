@@ -12,8 +12,6 @@ preguntar
 		conDescripcion: descripcionPregunta
 		conTopicos: top
 		yUsuario: self session usuario.
-	top
-		do:
-			[ :topico |  CuOOra soleInstance agregarTopico: topico conPregunta: pregunta ].
+	top do: [ :topico | CuOOra soleInstance agregarTopico: topico conPregunta: pregunta ].
 	self session usuario agregarPregunta: pregunta.
 	self answer
