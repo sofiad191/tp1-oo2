@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"textoBusqueda"
-	],
+	"instvars" : [ ],
 	"name" : "FindTopicComponent",
 	"type" : "normal"
 }

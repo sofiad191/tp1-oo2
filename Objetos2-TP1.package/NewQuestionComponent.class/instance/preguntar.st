@@ -4,6 +4,7 @@ preguntar
 	tituloPregunta ifEmpty: [ ^ self ].
 	descripcionPregunta ifEmpty: [ ^ self ].
 	topicosPregunta ifEmpty: [ ^ self ].
+	
 	top := ((topicosPregunta substrings: ',')
 		collect: [ :nombre | Topico conNombre: nombre yDescripcion: '' ])
 		asOrderedCollection.
@@ -12,6 +13,7 @@ preguntar
 		conDescripcion: descripcionPregunta
 		conTopicos: top
 		yUsuario: self session usuario.
-	top do: [ :topico | CuOOra soleInstance agregarTopico: topico conPregunta: pregunta ].
+		
+	top do: [ :topico | self model agregarTopico: topico conPregunta: pregunta ].
 	self session usuario agregarPregunta: pregunta.
 	self answer
