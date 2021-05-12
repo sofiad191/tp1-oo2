@@ -15,9 +15,8 @@ renderSingleQuestion: aQuestion On: aCanvas
 								ifFalse: [ aCanvas anchor
 										callback: [ self session usuario agregarTopicoDeInteres: each ];
 										with: [ aCanvas button: 'Seguir Topico' ] ] ] ] ].
-
 	self renderQuestionInfo: aQuestion On: aCanvas.
 	aCanvas break.
-	self renderVotesOn: aCanvas fromQuestion: aQuestion.
+	self renderVotesOn: aCanvas fromPublication: aQuestion.
 	aCanvas break.
-	self renderVotesButton: aCanvas withQuestion: aQuestion
+	self renderVotesButtonOn: aQuestion withPublication: aCanvas

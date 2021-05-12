@@ -14,7 +14,7 @@ renderAnswersOn: aCanvas
 							aCanvas break.
 							aCanvas span: 'Realizada por ' , self usuario nombre.
 							aCanvas break.
-							self renderVotesOn: aCanvas fromQuestion: each.
+							self renderVotesOn: aCanvas fromPublication: each.
 							aCanvas break.
-							self renderVotesButton: aCanvas withQuestion: each.
+							self renderVotesButtonOn: each withPublication: aCanvas.
 							aCanvas horizontalRule ] ] ]

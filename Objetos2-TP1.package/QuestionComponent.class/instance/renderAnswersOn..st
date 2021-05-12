@@ -11,15 +11,9 @@ renderAnswersOn: aCanvas
 					self renderAnswerUser: each usuario On: aCanvas.
 					aCanvas break.
 					aCanvas paragraph: each texto.
-					self renderVotesOn: aCanvas fromQuestion: each.
+					self renderVotesOn: aCanvas fromPublication: each.
 					aCanvas break.
-					aCanvas anchor
-						callback: [ each agregarLikeConUsuario: self session usuario];
-						with: [ aCanvas button: 'Like' ].
-					aCanvas anchor
-						callback:
-								[ each agregarDislikeConUsuario: self session usuario ];
-						with: [ aCanvas button: 'Dislike' ].
+					self renderVotesButtonOn: aCanvas withPublication: each.
 					aCanvas break.
 					aCanvas horizontalRule.
 					aCanvas break ] ]

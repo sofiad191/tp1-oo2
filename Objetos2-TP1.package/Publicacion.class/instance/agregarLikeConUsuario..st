@@ -1,11 +1,9 @@
 operations
 agregarLikeConUsuario: unUsuario
-	| voto |
-	voto := Voto new.
-	voto creador: unUsuario.
-	voto publicacion: self.
+	| voto1|
+	voto1 := Voto likeConUsuario: unUsuario yPublicacion: self.
 	votos
 		detect: [ :v | v creador = unUsuario ]
 		ifFound: [ :v | self eliminarVoto: v ].
-	voto darLike.
-			votos add: voto 
+	voto1 darLike.
+	votos add: voto1
