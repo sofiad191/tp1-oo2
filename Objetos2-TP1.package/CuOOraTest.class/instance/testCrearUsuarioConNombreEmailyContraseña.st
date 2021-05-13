@@ -1,7 +1,7 @@
 tests
 testCrearUsuarioConNombreEmailyContraseña
-	| us3 |
+	| usuario3 |
 	self assert: sistema usuarios size equals: 2.
-	us3 := sistema crearUsuarioConNombre: 'Juan' email: 'Juan@gmail.com' yContraseña: 'pepe'.
+	usuario3 := sistema crearUsuarioConNombre: 'Pepe' email: 'pepe@gmail.com' yContraseña: 'pepe123'.
 	self assert: sistema usuarios size equals: 3.
-	self assert: (sistema usuarios includes: us3).
+	self assert: (sistema usuarios includes: usuario3).

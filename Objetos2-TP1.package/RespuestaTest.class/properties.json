@@ -6,14 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"preg1",
-		"preg2",
-		"res1",
-		"res2",
-		"res3",
-		"us1",
-		"us2",
-		"us3"
+		"pregunta1",
+		"respuesta1",
+		"usuario1",
+		"usuario2"
 	],
 	"name" : "RespuestaTest",
 	"type" : "normal"

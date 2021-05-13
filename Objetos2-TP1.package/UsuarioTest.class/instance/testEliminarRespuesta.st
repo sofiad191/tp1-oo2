@@ -1,8 +1,7 @@
 tests
 testEliminarRespuesta
-	self assert: (us1 respuestas includes: res2).
-	self assert: us1 respuestas size equals: 1.
-	us1 eliminarRespuesta: res2.
-	self deny: (us1 respuestas includes: res2).
-	self assert: us1 respuestas size equals: 0.
-	
+	self assert: (usuario1 respuestas includes: respuesta2).
+	self assert: usuario1 respuestas size equals: 1.
+	usuario1 eliminarRespuesta: respuesta2.
+	self deny: (usuario1 respuestas includes: respuesta2).
+	self assert: usuario1 respuestas size equals: 0

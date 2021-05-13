@@ -6,12 +6,16 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"us1",
-		"us2",
-		"preg1",
-		"preg2",
-		"top1",
-		"top2"
+		"usuario1",
+		"usuario2",
+		"pregunta1",
+		"pregunta2",
+		"topico1",
+		"topico2",
+		"topico3",
+		"topico4",
+		"coleccionTopicos1",
+		"coleccionTopicos2"
 	],
 	"name" : "PreguntaTest",
 	"type" : "normal"

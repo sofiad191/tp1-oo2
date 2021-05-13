@@ -6,15 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"us1",
-		"us2",
-		"preg1",
-		"preg2",
-		"top1",
-		"top2",
-		"res1",
-		"res2",
-		"votos"
+		"usuario1",
+		"usuario2",
+		"pregunta1",
+		"respuesta1"
 	],
 	"name" : "PublicacionTest",
 	"type" : "normal"

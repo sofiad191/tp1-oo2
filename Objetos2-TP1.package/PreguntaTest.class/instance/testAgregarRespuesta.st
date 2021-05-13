@@ -1,20 +1,20 @@
 tests
 testAgregarRespuesta
-	| res res2 |
-	self assert: preg1 respuestas size equals: 0.
-	res := Respuesta
-		conPregunta: preg1
+	| respuesta respuesta2 |
+	self assert: pregunta1 respuestas size equals: 0.
+	respuesta := Respuesta
+		conPregunta: pregunta1
 		unaDescripcion: 'Lee el libro'
-		yUnUsuario: us1.
-	us1 agregarRespuesta: res.
-	preg1 agregarRespuesta: res.
-	self assert: (preg1 respuestas includes: res).
-	self assert: preg1 respuestas size equals: 1.
-	res2 := Respuesta
-		conPregunta: preg2
+		yUnUsuario: usuario1.
+	usuario1 agregarRespuesta: respuesta.
+	pregunta1 agregarRespuesta: respuesta.
+	self assert: (pregunta1 respuestas includes: respuesta).
+	self assert: pregunta1 respuestas size equals: 1.
+	respuesta2 := Respuesta
+		conPregunta: pregunta2
 		unaDescripcion: '...'
-		yUnUsuario: us1.
-	us1 agregarRespuesta: res2.
-	preg1 agregarRespuesta: res2.
-	self assert: (preg1 respuestas includes: res2).
-	self assert: preg1 respuestas size equals: 2
+		yUnUsuario: usuario1.
+	usuario1 agregarRespuesta: respuesta2.
+	pregunta1 agregarRespuesta: respuesta2.
+	self assert: (pregunta1 respuestas includes: respuesta2).
+	self assert: pregunta1 respuestas size equals: 2

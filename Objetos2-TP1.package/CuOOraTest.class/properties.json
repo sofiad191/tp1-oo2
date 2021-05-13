@@ -7,12 +7,12 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"sistema",
-		"us1",
-		"us2",
-		"top1",
-		"top2",
-		"preg2",
-		"preg1"
+		"usuario1",
+		"usuario2",
+		"topico1",
+		"topico2",
+		"pregunta1",
+		"respuesta1"
 	],
 	"name" : "CuOOraTest",
 	"type" : "normal"

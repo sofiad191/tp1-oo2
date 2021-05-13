@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"publi1",
-		"publi2",
-		"us1",
-		"us2"
+		"publicacion1",
+		"publicacion2",
+		"usuario1",
+		"usuario2"
 	],
 	"name" : "VotoTest",
 	"type" : "normal"

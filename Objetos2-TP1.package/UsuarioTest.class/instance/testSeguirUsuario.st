@@ -1,6 +1,6 @@
 tests
 testSeguirUsuario
-	us1 seguirUsuario: us2.
-	self assert: (us1 usuariosSeguidos includes: us2).
-	self deny: (us1 usuariosSeguidos includes: us3).
-	
+self assert: usuario1 usuariosSeguidos size equals: 0.
+	usuario1 seguirUsuario: usuario2.
+	self assert: (usuario1 usuariosSeguidos includes: usuario2).
+	self assert: usuario1 usuariosSeguidos size equals: 1.

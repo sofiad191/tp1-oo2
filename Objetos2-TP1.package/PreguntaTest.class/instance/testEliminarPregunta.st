@@ -1,20 +1,17 @@
 tests
 testEliminarPregunta
-	| res top |
-	top := Topico new.
-	self assert: preg1 respuestas size equals: 0.
-	res := Respuesta
-		conPregunta: preg1
+	| respuesta |
+	self assert: pregunta1 respuestas size equals: 0.
+	respuesta := Respuesta
+		conPregunta: pregunta1
 		unaDescripcion: 'Lee el libro'
-		yUnUsuario: us2.
-	us2 agregarRespuesta: res.
-	preg1 agregarRespuesta: res.
-	self assert: preg1 respuestas size equals: 1.
-	self assert: preg1 topicos size equals: 1.
-	self assert: (preg1 respuestas includes: res).
-	self assert: res usuario equals: us2.
-	self assert: preg1 usuario equals: us1.
-	self assert: (us1 preguntas includes: preg1).
-	preg1 eliminarPregunta.
-	self deny: (us1 preguntas includes: preg1).
-	self deny: (us2 respuestas includes: preg1)
+		yUnUsuario: usuario2.
+	usuario2 agregarRespuesta: respuesta.
+	pregunta1 agregarRespuesta: respuesta.
+	self assert: pregunta1 respuestas size equals: 1.
+	self assert: (pregunta1 respuestas includes: respuesta).
+	self assert: pregunta1 usuario equals: usuario1.
+	self assert: (usuario1 preguntas includes: pregunta1).
+	pregunta1 eliminarPregunta.
+	self deny: (usuario1 preguntas includes: pregunta1).
+	self deny: (usuario2 respuestas includes: respuesta)

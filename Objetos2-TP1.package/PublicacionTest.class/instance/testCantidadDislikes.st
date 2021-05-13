@@ -1,9 +1,12 @@
 tests
 testCantidadDislikes
-	self assert: preg1 cantidadDislikes equals: 0.
-	preg1 agregarDislikeConUsuario: us2.
-	self assert: preg1 cantidadDislikes equals: 1.
-	preg1 agregarDislikeConUsuario: us2.
-	self assert: preg1 cantidadDislikes equals: 1.
-	preg1 agregarDislikeConUsuario: us1.
-	self assert: preg1 cantidadDislikes equals: 2
+	self assert: pregunta1 cantidadDislikes equals: 0.
+	pregunta1
+		agregarVoto: (Voto dislikeConUsuario: usuario1 yPublicacion: pregunta1).
+	self assert: pregunta1 cantidadDislikes equals: 1.
+	pregunta1
+		agregarVoto: (Voto dislikeConUsuario: usuario1 yPublicacion: pregunta1).
+	self assert: pregunta1 cantidadDislikes equals: 1.
+	pregunta1
+		agregarVoto: (Voto dislikeConUsuario: usuario2 yPublicacion: pregunta1).
+	self assert: pregunta1 cantidadDislikes equals: 2

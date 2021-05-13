@@ -1,21 +1,11 @@
 running
 setUp
 	sistema := CuOOra new.
-	us1 := Usuario
-		conNombre: 'Juan'
-		conEmail: 'juan@gmail.com'
-		yContraseña: 'hola123'.
-	us2 := Usuario
-		conNombre: 'Pablo'
-		conEmail: 'pablo@gmail.com'
-		yContraseña: 'chau123'.
-	top1 := Topico
-		conNombre: 'Java'
-		yDescripcion: 'Lenguaje de programacion'.
-	top2 := Topico
-		conNombre: 'Variables'
-		yDescripcion: 'Elemento de lenguaje'.
-	sistema agregarUsuario: us1.
-	sistema agregarUsuario: us2.
-	sistema agregarTopico: top1.
-	sistema agregarTopico: top2.
+	usuario1 := Usuario new.
+	usuario2 := Usuario new.
+	usuario1 := sistema crearUsuarioConNombre: 'Sofia' email: 'sofia@gmail.com' yContraseña: 'sofia123'.
+	usuario2 := sistema crearUsuarioConNombre: 'Juan' email: 'juan@gmail.com' yContraseña: 'juan123'.
+	
+	pregunta1 := sistema agregarPreguntaConTitulo: 'Como hacer los tests en smalltalk?' ConDescripcion: '..' conTopicos: ('Smalltalk,tests') yUsuario: usuario1.
+	respuesta1 := sistema agregarRespuestaAPregunta: pregunta1 ConDescripcion: 'sUnit' yUsuario: usuario2.
+	

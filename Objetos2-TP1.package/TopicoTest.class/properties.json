@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"topico",
-		"preg1",
-		"preg2"
+		"pregunta1",
+		"pregunta2"
 	],
 	"name" : "TopicoTest",
 	"type" : "normal"

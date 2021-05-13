@@ -1,27 +1,26 @@
 running
 setUp
-	| top1 top2 |
-	us1 := Usuario conNombre: 'Juan' conEmail: 'juan@gmail.com' yContraseña: 'contraseña'.
-	us2 := Usuario conNombre: 'Pepe' conEmail: 'pepe@gmail.com' yContraseña: 'pepe123'.
-	us3 := Usuario conNombre: 'Sofia' conEmail: 'sofia@gmail.com' yContraseña: 'sofia123'.
-	top1 := Topico
+	| topicos1 |
+	topicos1 := OrderedCollection new.
+	topicos1 add: (Topico
 		conNombre: 'Smalltalk'
-		yDescripcion: 'Lenguaje de Programacion'.
-	top2 := Topico
-		conNombre: 'JavaScript'
-		yDescripcion: 'Lenguaje de programacion'.
-	preg1 := Pregunta
+		yDescripcion: '..').
+	usuario1 := Usuario
+		conNombre: 'Juan'
+		conEmail: 'juan@gmail.com'
+		yContraseña: 'contraseña'.
+	usuario2 := Usuario
+		conNombre: 'Pepe'
+		conEmail: 'pepe@gmail.com'
+		yContraseña: 'pepe123'.
+	pregunta1 := Pregunta
 		conTitulo: 'Desarrollo de Pagina web con Smalltalk(Seaside)'
 		conDescripcion: 'Problemas con la implementacion de los componentes'
-		conTopicos: top1 nombre
-		yUsuario: us1.
-	preg2 := Pregunta
-		conTitulo: 'Desarrollo de Pagina web con Javacript'
-		conDescripcion: 'Como empezar'
-		conTopicos: top2 nombre
-		yUsuario: us2.
-	res1 := Respuesta
-		conPregunta: preg1
+		conTopicos: topicos1
+		yUsuario: usuario1.
+	usuario1 agregarPregunta: pregunta1.
+	respuesta1 := Respuesta
+		conPregunta: pregunta1
 		unaDescripcion: 'Lee el libro'
-		yUnUsuario: us3.
-	us3 agregarRespuesta: res1
+		yUnUsuario: usuario2.
+	usuario2 agregarRespuesta: respuesta1

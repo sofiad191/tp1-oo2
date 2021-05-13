@@ -1,10 +1,10 @@
 tests
 testCalcularPuntaje
-	self assert: preg2 votos size equals: 0.
-	preg2 agregarLikeConUsuario: us1.
-	self assert: preg2 votos size equals: 1.
-	preg2 agregarLikeConUsuario: us1.
-	self assert: preg2 votos size equals: 1.
-	preg2 agregarLikeConUsuario: us2.
-	self assert: preg2 votos size equals: 2.
-	self assert: preg2 calcularPuntaje equals: 2
+	self assert: pregunta1 votos size equals: 0.
+	pregunta1 agregarVoto: (Voto likeConUsuario: usuario1 yPublicacion: pregunta1 ).
+	self assert: pregunta1 votos size equals: 1.
+		pregunta1 agregarVoto: (Voto likeConUsuario: usuario1 yPublicacion: pregunta1 ).
+	self assert: pregunta1 votos size equals: 1.
+		pregunta1 agregarVoto: (Voto likeConUsuario: usuario2 yPublicacion: pregunta1 ).
+	self assert: pregunta1 votos size equals: 2.
+	self assert: pregunta1 calcularPuntaje equals: 2
