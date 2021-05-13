@@ -6,4 +6,5 @@ agregarRespuestaAPregunta: unaPregunta ConDescripcion: unaDescripcion yUsuario: 
 		unaDescripcion: unaDescripcion
 		yUnUsuario: unUsuario.
 	unUsuario agregarRespuesta: respuestaNueva.
-	unaPregunta agregarRespuesta: respuestaNueva
+	unaPregunta agregarRespuesta: respuestaNueva.
+	^respuestaNueva	

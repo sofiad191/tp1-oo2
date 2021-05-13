@@ -5,5 +5,6 @@ crearUsuarioConNombre: unNombre email: unEmail yContraseña: unaContraseña
 		conNombre: unNombre
 		conEmail: unEmail
 		yContraseña: unaContraseña.
-	self agregarUsuario: nuevoUsuario.
-	^nuevoUsuario
+	(self usuarioConEmail: unEmail yContraseña: unaContraseña)
+		ifNil: [ usuarios add: nuevoUsuario. ^ nuevoUsuario ].
+	^ nil

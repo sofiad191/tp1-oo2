@@ -37,5 +37,7 @@ setUp
 		unaDescripcion: '..'
 		yUnUsuario: usuario1.
 	usuario1 agregarRespuesta: respuesta2.
+	usuario1 agregarTopicoDeInteres: topico1.
+	usuario1 agregarTopicoDeInteres: topico2.
 	usuario2 agregarTopicoDeInteres: topico1.
 	usuario2 seguirUsuario: usuario1

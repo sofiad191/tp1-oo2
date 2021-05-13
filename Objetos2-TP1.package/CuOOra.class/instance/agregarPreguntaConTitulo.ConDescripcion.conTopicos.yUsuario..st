@@ -11,4 +11,5 @@ agregarPreguntaConTitulo: unTitulo ConDescripcion: unaDescripcion conTopicos: un
 		yUsuario: unUsuario.
 	coleccionTopicos
 		do: [ :topico | self agregarTopico: topico conPregunta: preguntaNueva ].
-	unUsuario agregarPregunta: preguntaNueva
+	unUsuario agregarPregunta: preguntaNueva.
+	^preguntaNueva

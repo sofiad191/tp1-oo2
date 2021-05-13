@@ -1,3 +1,3 @@
-as yet unclassified
+operations
 siSigoElTopico: unTopico
 	^self topicosDeInteres includes: unTopico .
