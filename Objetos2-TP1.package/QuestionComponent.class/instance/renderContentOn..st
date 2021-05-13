@@ -8,7 +8,7 @@ renderContentOn: aCanvas
 	self renderTopicOn: aCanvas.
 	aCanvas break.
 	self renderVotesOn: aCanvas fromPublication: pregunta.
-	aCanvas space.
+	aCanvas break.
 	self renderVotesButtonOn: aCanvas withPublication: pregunta.
 	aCanvas break.
 	self renderAnswersOn: aCanvas.

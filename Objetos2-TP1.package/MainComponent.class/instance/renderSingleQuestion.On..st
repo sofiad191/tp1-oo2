@@ -19,4 +19,4 @@ renderSingleQuestion: aQuestion On: aCanvas
 	aCanvas break.
 	self renderVotesOn: aCanvas fromPublication: aQuestion.
 	aCanvas break.
-	self renderVotesButtonOn: aQuestion withPublication: aCanvas
+	self renderVotesButtonOn: aCanvas withPublication: aQuestion 

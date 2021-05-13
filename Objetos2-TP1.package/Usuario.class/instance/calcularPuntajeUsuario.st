@@ -1,6 +1,5 @@
 operations
 calcularPuntajeUsuario
-
 	^ preguntas size * 20 + (respuestas size * 50)
 		+
 			(self preguntas
@@ -9,4 +8,5 @@ calcularPuntajeUsuario
 			(self respuestas
 				sumNumbers: [ :unaRespuesta | 
 					unaRespuesta usuario = unaRespuesta pregunta usuario
-						ifFalse: [ unaRespuesta calcularPuntaje ] ])
+					ifTrue: 0 ifFalse: [ unaRespuesta calcularPuntaje ] 
+						  ])
